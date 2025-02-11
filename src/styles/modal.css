@@ -1,0 +1,70 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  backdrop-filter: blur(2px);
+
+  & .modal-content {
+    overflow-y: scroll;
+    max-height: 52rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2.5rem;
+    max-width: 30rem;
+
+    background-color: #23242c;
+    color: var(--content-secondary);
+    border-radius: 8px;
+  }
+
+  & h1 {
+    margin-bottom: 4px;
+  }
+  & .inputs {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    & .input {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      & label {
+        color: var(--content-primary);
+      }
+    }
+  }
+  & form {
+    & button {
+      height: 3rem;
+      width: 8rem;
+      border-radius: 8px;
+      border: none;
+      background: transparent;
+      color: var(--content-secondary);
+      cursor: pointer;
+    }
+    & .buttons {
+      display: flex;
+      margin-top: 2rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+
+      & .btn-to-schedule {
+        font-weight: bold;
+        background-color: var(--content-brand);
+        color: var(--content-primary);
+      }
+    }
+  }
+}
+
+& .hidden {
+  display: none;
+}

@@ -1,0 +1,54 @@
+.appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.periods {
+  background-color: var(--bg-tertiary);
+  /*  border: 1px solid green; */
+  border-radius: 8px;
+  padding: 14px;
+}
+.periods .period-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #353339;
+  margin-bottom: 20px;
+  font-size: var(--fs-sm);
+  padding-bottom: 1rem;
+
+  & .icon-and-period {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  & span {
+    font-family: var(--font-inter-tight);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
+.periods ul li {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #353339;
+  padding: 16px;
+  font-size: var(--fs-sm);
+  justify-content: space-between;
+}
+.periods ul li .schedule {
+  display: flex;
+  /*   border: 1px solid palegoldenrod; */
+  flex-direction: row;
+  color: var(--content-primary);
+  font-size: var(--fs-sm);
+  gap: 16px;
+
+  & .pet-and-owner {
+    display: flex;
+    gap: 3px;
+  }
+}
