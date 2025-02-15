@@ -1,6 +1,10 @@
-const btnClose = document.querySelector(".btn-close");
+const btnCloseModal = document.querySelector(".btn-close-modal");
+const btnOpenModal = document.querySelector(".new-schedule");
 const modal = document.querySelector(".modal");
 
-btnClose.addEventListener("click", () => {
+btnOpenModal.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+btnCloseModal.addEventListener("click", () => {
   modal.classList.add("hidden");
 });
