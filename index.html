@@ -5,7 +5,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
@@ -28,7 +27,7 @@
             >
           </div>
           <div class="calendar">
-            <input type="date" />
+            <input id="date" type="date" />
           </div>
         </header>
 
@@ -44,7 +43,7 @@
               </div>
               <span class="start-end-period">09h-12h </span>
             </div>
-            <ul>
+            <ul class="schedulesListMorning">
               <li>
                 <div class="schedule">
                   <h3>13:00</h3>
@@ -70,7 +69,7 @@
             </ul>
           </div>
 
-          <div class="periods morning-period">
+          <div class="periods afternoon-period">
             <div class="period-header">
               <div class="icon-and-period">
                 <img
@@ -81,7 +80,7 @@
               </div>
               <span class="start-end-period">09h-12h </span>
             </div>
-            <ul>
+            <ul class="schedulesListAfternoon">
               <li>
                 <div class="schedule">
                   <h3>13:00</h3>
@@ -118,7 +117,7 @@
             </ul>
           </div>
 
-          <div class="periods morning-period">
+          <div class="periods night-period">
             <div class="period-header">
               <div class="icon-and-period">
                 <img
@@ -129,7 +128,7 @@
               </div>
               <span class="start-end-period">09h-12h </span>
             </div>
-            <ul>
+            <ul class="schedulesListNight">
               <li>
                 <div class="schedule">
                   <h3>13:00</h3>
@@ -235,6 +234,5 @@
         </div>
       </div>
     </div>
-    <script type="module" defer src="./src/main.js"></script>
   </body>
 </html>

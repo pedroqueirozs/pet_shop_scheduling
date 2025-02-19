@@ -1,10 +1,12 @@
 {
   "dependencies": {
-    "date-fns": "^4.1.0"
+    "date-fns": "^4.1.0",
+    "json-server": "^1.0.0-beta.3"
   },
   "scripts": {
     "build": "webpack",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "server": "json-server --watch server.json --port 3333"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
