@@ -5,7 +5,6 @@
 }
 .periods {
   background-color: var(--bg-tertiary);
-  /*  border: 1px solid green; */
   border-radius: 8px;
   padding: 14px;
 }
@@ -38,10 +37,12 @@
   padding: 16px;
   font-size: var(--fs-sm);
   justify-content: space-between;
+  & .remove-schedule {
+    cursor: pointer;
+  }
 }
 .periods ul li .schedule {
   display: flex;
-  /*   border: 1px solid palegoldenrod; */
   flex-direction: row;
   color: var(--content-primary);
   font-size: var(--fs-sm);

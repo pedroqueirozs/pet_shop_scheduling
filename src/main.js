@@ -6,5 +6,10 @@ import "./styles/input.css";
 import "./styles/modal.css";
 import "./styles/period.css";
 
-import "./modules/page-load.js";
-import "./modules/modal/modal-open-and-close.js";
+import "./modules/pageLoad.js";
+import "./modules/modal/modalOpenAndClose.js";
+
+import "./modules/form/formData.js";
+import "./modules/form/dateFilter.js";
+import "./modules/form/dateChange.js";
+import "./modules/schedules/remove.js";

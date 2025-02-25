@@ -27,7 +27,7 @@
             >
           </div>
           <div class="calendar">
-            <input id="date" type="date" />
+            <input id="date-filter" type="date" />
           </div>
         </header>
 
@@ -44,28 +44,17 @@
               <span class="start-end-period">09h-12h </span>
             </div>
             <ul class="schedulesListMorning">
-              <li>
+              <!--   <li>
                 <div class="schedule">
-                  <h3>13:00</h3>
+                  <h3>08:00</h3>
                   <div class="pet-and-owner">
                     <h3 class="pet">Mel</h3>
-                    <span class="owner">/ João Souza</span>
+                    <span class="owner">João Souza</span>
                   </div>
                 </div>
                 <span>Vacinação</span>
                 <span class="remove-schedule">Remover agendamento</span>
-              </li>
-              <li>
-                <div class="schedule">
-                  <h3>13:00</h3>
-                  <div class="pet-and-owner">
-                    <h3 class="pet">Mel</h3>
-                    <span class="owner">/ João Souza</span>
-                  </div>
-                </div>
-                <span>Vacinação</span>
-                <span class="remove-schedule">Remover agendamento</span>
-              </li>
+              </li> -->
             </ul>
           </div>
 
@@ -78,43 +67,9 @@
                 />
                 <h2>Tarde</h2>
               </div>
-              <span class="start-end-period">09h-12h </span>
+              <span class="start-end-period">13h-18h </span>
             </div>
-            <ul class="schedulesListAfternoon">
-              <li>
-                <div class="schedule">
-                  <h3>13:00</h3>
-                  <div class="pet-and-owner">
-                    <h3 class="pet">Mel</h3>
-                    <span class="owner">João Souza</span>
-                  </div>
-                </div>
-                <span>Vacinação</span>
-                <span class="remove-schedule">Remover agendamento</span>
-              </li>
-              <li>
-                <div class="schedule">
-                  <h3>13:00</h3>
-                  <div class="pet-and-owner">
-                    <h3 class="pet">Mel</h3>
-                    <span class="owner">João Souza</span>
-                  </div>
-                </div>
-                <span>Vacinação</span>
-                <span class="remove-schedule">Remover agendamento</span>
-              </li>
-              <li>
-                <div class="schedule">
-                  <h3>13:00</h3>
-                  <div class="pet-and-owner">
-                    <h3 class="pet">Mel</h3>
-                    <span class="owner">João Souza</span>
-                  </div>
-                </div>
-                <span>Vacinação</span>
-                <span class="remove-schedule">Remover agendamento</span>
-              </li>
-            </ul>
+            <ul class="schedulesListAfternoon"></ul>
           </div>
 
           <div class="periods night-period">
@@ -126,54 +81,9 @@
                 />
                 <h2>Noite</h2>
               </div>
-              <span class="start-end-period">09h-12h </span>
+              <span class="start-end-period">19h-21h </span>
             </div>
-            <ul class="schedulesListNight">
-              <li>
-                <div class="schedule">
-                  <h3>13:00</h3>
-                  <div class="pet-and-owner">
-                    <h3 class="pet">Mel</h3>
-                    <span class="owner">João Souza</span>
-                  </div>
-                </div>
-                <span>Vacinação</span>
-                <span class="remove-schedule">Remover agendamento</span>
-              </li>
-              <li>
-                <div class="schedule">
-                  <h3>13:00</h3>
-                  <div class="pet-and-owner">
-                    <h3 class="pet">Mel</h3>
-                    <span class="owner">João Souza</span>
-                  </div>
-                </div>
-                <span>Vacinação</span>
-                <span class="remove-schedule">Remover agendamento</span>
-              </li>
-              <li>
-                <div class="schedule">
-                  <h3>13:00</h3>
-                  <div class="pet-and-owner">
-                    <h3 class="pet">Mel</h3>
-                    <span class="owner">João Souza</span>
-                  </div>
-                </div>
-                <span>Vacinação</span>
-                <span class="remove-schedule">Remover agendamento</span>
-              </li>
-              <li>
-                <div class="schedule">
-                  <h3>13:00</h3>
-                  <div class="pet-and-owner">
-                    <h3 class="pet">Mel</h3>
-                    <span class="owner">João Souza</span>
-                  </div>
-                </div>
-                <span>Vacinação</span>
-                <span class="remove-schedule">Remover agendamento</span>
-              </li>
-            </ul>
+            <ul class="schedulesListNight"></ul>
           </div>
         </div>
         <button class="new-schedule">NOVO AGENDAMENTO</button>
@@ -186,48 +96,55 @@
           <h1>Agende um atendimento</h1>
           <span>Preencha os dados do cliente para realizar o agendamemto:</span>
 
-          <form action="">
+          <form>
             <div class="inputs">
               <div class="input">
                 <label for="name-tutor">Nome do tutor</label>
-                <input id="name-tutor" type="text" placeholder="Helena Souza" />
+                <input
+                  id="name-tutor"
+                  type="text"
+                  placeholder="Helena Souza"
+                  required
+                />
               </div>
 
               <div class="input">
                 <label for="name-pet">Nome do pet</label>
-                <input id="name-pet" type="text" placeholder="Bob" />
+                <input id="name-pet" type="text" placeholder="Bob" required />
               </div>
 
               <div class="input">
                 <label for="telefone">Telefone</label>
                 <input
-                  id="telefone"
+                  id="telephone"
                   type=" number"
                   placeholder="(00) 0 0000-0000"
+                  required
                 />
               </div>
 
               <div class="input">
-                <label for="serviço">Descrição do serviço</label>
+                <label for="serviçe">Descrição do serviço</label>
                 <textarea
-                  name="serviço"
-                  id="serviço"
+                  name="service"
+                  id="service"
                   placeholder="Banho e tosa"
+                  required
                 ></textarea>
               </div>
 
               <div class="input">
                 <label for="date">Data</label>
-                <input id="date" type="date" />
+                <input id="select-appointment-date" type="date" required />
 
                 <div class="input">
                   <label for="date-time">Hora</label>
-                  <input id="date-time" type="time" value="12:00" />
+                  <input id="date-time" type="time" value="12:00" required />
                 </div>
               </div>
             </div>
             <div class="buttons">
-              <button class="btn-to-schedule">AGENDAR</button>
+              <button type="submit" class="btn-to-schedule">AGENDAR</button>
               <button type="button" class="btn-close-modal">Fechar</button>
             </div>
           </form>
